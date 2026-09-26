@@ -148,4 +148,8 @@ ol {
     .mobile {
         display: block;
     }
+
+    div.simple-row {
+        width: 90%;
+    }
 }
