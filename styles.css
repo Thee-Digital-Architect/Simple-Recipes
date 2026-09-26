@@ -87,6 +87,7 @@ h1 {
 
 h2 {
     text-decoration: underline;
+    text-align: center;
 }
 
 p.desc {
@@ -106,8 +107,16 @@ div.breakfast {
 
 div.main-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(325px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
     gap: 20px;
+}
+
+a.card-link {
+    text-decoration: none;
+}
+
+a.card-link:hover {
+    opacity: 70%;
 }
 
 div.gridbox.img, div.main-grid.img {
@@ -124,8 +133,19 @@ div.text {
 
 ol {
     width: fit-content;
-    margin: auto;
+    margin: 0;
     text-align: left;
+}
+
+p.foot {
+    text-align: center;
+    padding: 24px;
+    margin: 0;
+}
+
+footer {
+    background-color: orange;
+    color: rgb(255, 241, 222);
 }
 
 /* Responsive CSS  */
