@@ -17,7 +17,6 @@ body {
 }
 
 nav {
-    width: 70%;
     margin: auto;
 }
 
@@ -44,10 +43,17 @@ ul.nav {
     text-decoration: underline;
 }
 
-div.row {
-    width: 70%;
+div.row, div.simple-row {
     margin: auto;
     padding: 20px;
+}
+
+div.row {
+    width: 90%;
+}
+
+div.simple-row {
+    width: 70%;
 }
 
 img {
@@ -55,6 +61,10 @@ img {
     margin: auto;
     border: 1px solid orange;
     border-radius: 16px;
+}
+
+div.bonjour {
+    text-align: center;
 }
 
 div.card {
@@ -91,10 +101,16 @@ div.row.card {
 
 div.breakfast {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 50%));
 }
 
-div.gridbox.img {
+div.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(325px, 1fr));
+    gap: 20px;
+}
+
+div.gridbox.img, div.main-grid.img {
     margin: auto;
 }
 
@@ -110,4 +126,26 @@ ol {
     width: fit-content;
     margin: auto;
     text-align: left;
+}
+
+/* Responsive CSS  */
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Smaller Screens */
+
+@media (max-width:835px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
 }
