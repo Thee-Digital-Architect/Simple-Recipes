@@ -1,6 +1,19 @@
+.im-fell-french-canon-regular {
+  font-family: "IM Fell French Canon", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.im-fell-french-canon-regular-italic {
+  font-family: "IM Fell French Canon", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 body {
+    background-color: rgb(255, 241, 222);
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "IM Fell French Canon", serif;
 }
 
 nav {
@@ -38,8 +51,63 @@ div.row {
 }
 
 img {
-    width: 70%;
+    width: 90%;
     margin: auto;
-    border: 5px solid orange;
+    border: 1px solid orange;
     border-radius: 16px;
+}
+
+div.card {
+    background-color: white;
+    border: 1px solid orange;
+    border-top: solid 5px orange;
+    border-radius: 16px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+h1, h2 {
+    margin-top: 0px;
+    color: orange;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+p.desc {
+    margin: 16px;
+    text-align: left;
+    font-size: 18px;
+}
+
+div.row.card {
+    margin: 4em auto;
+}
+
+div.breakfast {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+div.gridbox.img {
+    margin: auto;
+}
+
+div.inner {
+    text-align: center;
+}
+
+div.text {
+    margin: auto;
+}
+
+ol {
+    width: fit-content;
+    margin: auto;
+    text-align: left;
 }

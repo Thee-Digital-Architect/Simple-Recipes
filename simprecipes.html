@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Simple Recipes</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -20,66 +26,86 @@
     <!-- Main Elements -->
     <main>
         <div class="row">
-            <h1>Bonjour!</h1>
-            <p>Hello Again! <br> You've reached the simple recipes page. Below you'll find a few simple recipes that even a child can make, Enjoy! </p>
+            <div class="card">
+                <h1>Bonjour!</h1>
+                <p>Hello Again! <br> You've reached the simple recipes page. Below you'll find a few simple recipes that even a child can make, Enjoy! </p>
+            </div>
         </div>
         <div class="row">
-            <h2>Breakfast Cereal</h2>
-            <img src="img/cereal.jpg" alt="A picture of a bowl of breakfast cereal">
-            <h2>Description</h2>
-            <p>Cereal, formally termed breakfast cereal, is a traditional breakfast food made from processed cereal grains. It is traditionally eaten as part of breakfast, or a snack food, primarily in Western societies.</p>
-            <h2>Ingredients</h2>
-            <ul>
-                <li>Milk</li>
-                <li>Cereal of your choosing</li>
-            </ul>
-            <h2>Instructions</h2>
-            <ol>
-                <li>Pour cereal into an empty bowl. (Very important to do this first)</li>
-                <li>Add milk to the bowl (Don't drown the cereal in milk.)</li>
-                <li>Grab a spoon and enjoy!</li>
-            </ol>
+            <div class="card breakfast">
+                <div class="gridbox">
+                    <h2>Breakfast Cereal</h2>
+                    <img src="img/cereal.jpg" alt="A picture of a bowl of breakfast cereal">
+                </div>
+                <div class="gridbox text">
+                    <h3>Description</h3>
+                    <p class="desc">Cereal, formally termed breakfast cereal, is a traditional breakfast food made from processed cereal grains. It is traditionally eaten as part of breakfast, or a snack food, primarily in Western societies.</p>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>Milk</li>
+                        <li>Cereal of your choosing</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>Pour cereal into an empty bowl. (Very important to do this first)</li>
+                        <li>Add milk to the bowl (Don't drown the cereal in milk.)</li>
+                        <li>Grab a spoon and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
         </div>
         <div class="row">
-            <h2>Peanut Butter & Jelly</h2>
-            <img src="img/pb&j.jpg" alt="A picture of a peanut butter and jelly sandwich">
-            <h2>Description</h2>
-            <p>A peanut butter and jelly sandwich consists of peanut butter and fruit preserves—jelly—spread on bread. The sandwich may be open-faced, made of a single slice of bread folded over, or made between two slices of bread.</p>
-            <h2>Ingredients</h2>
-            <ul>
-                <li>Bread (of your choice)</li>
-                <li>Peanut Butter</li>
-                <li>Jelly</li>
-            </ul>
-            <h2>Instructions</h2>
-            <ol>
-                <li>Grab one slice of bread and spread a thin layer of peanut butter on the bread.  
-                </li>
-                <li>Grab the other slice of bread and spread a thin layer of jelly on the bread.</li>
-                <li>Put both slices of bread together (with the peanut butter and jelly facing each other). </li>
-                <li>Enjoy!</li>
-            </ol>
+            <div class="card breakfast">
+                <div class="gridbox img">
+                    <h2>Peanut Butter & Jelly</h2>
+                    <img src="img/pb&j.jpg" alt="A picture of a peanut butter and jelly sandwich">
+                </div>
+                <div class="gridbox text">
+                    <h3>Description</h3>
+                    <p class="desc">A peanut butter and jelly sandwich consists of peanut butter and fruit preserves—jelly—spread on bread. The sandwich may be open-faced, made of a single slice of bread folded over, or made between two slices of bread.</p>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>Bread (of your choice)</li>
+                        <li>Peanut Butter</li>
+                        <li>Jelly</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>Grab one slice of bread and spread a thin layer of peanut butter on the bread.  
+                        </li>
+                        <li>Grab the other slice of bread and spread a thin layer of jelly on the bread.</li>
+                        <li>Put both slices of bread together (with the peanut butter and jelly facing each other). </li>
+                        <li>Enjoy!</li>
+                    </ol>
+                </div>
+            </div>
         </div>
         <div class="row">
-            <h2>Yogurt Parfait</h2>
-            <img src="img/parfait.jpg" alt="">
-            <h2>Description</h2>
-            <p>Yogurt mixed with fruit, granola and/or nuts.</p>
-            <h2>Ingredients</h2>
-            <ul>
-                <li>Yogurt</li>
-                <li>Fruit</li>
-                <li>Granola</li>
-                <li>Nuts (optional)</li>
-            </ul>
-            <h2>Instructions</h2>
-            <ol>
-                <li>Add yogurt to a bowl</li>
-                <li>Add fruit to the bowl</li>
-                <li>Add granola (and nuts if you want)</li>
-                <li>Grab a spoon and mix the ingredients together.</li>
-                <li>Enjoy!</li>
-            </ol>
+            <div class="card breakfast">
+                <div class="gridbox">
+                    <h2>Yogurt Parfait</h2>
+                    <img src="img/yogurt parfait.jpg" alt="">
+                </div>
+                <div class="gridbox text">
+                    <h3>Description</h3>
+                    <p>Yogurt mixed with fruit, granola and/or nuts.</p>
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>Yogurt</li>
+                        <li>Fruit</li>
+                        <li>Granola</li>
+                        <li>Nuts (optional)</li>
+                    </ul>
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li>Add yogurt to a bowl</li>
+                        <li>Add fruit to the bowl</li>
+                        <li>Add granola (and nuts if you want)</li>
+                        <li>Grab a spoon and mix the ingredients together.</li>
+                        <li>Enjoy!</li>
+                    </ol>
+                </div>
+            </div>
         </div>
     </main>
     <!-- Footer Elements -->
